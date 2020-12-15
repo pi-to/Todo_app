@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<a class="btn btn-info btn-lg m-5" href="/create" role="button">Create New Task</a>
+{% for post in posts %}
+
+<div class="card w-50 mb-3" style="margin: auto;">
+    <div class="card-body">
+      {% if post.due.date() < today %}
+      <div class="alert alert-warning" role="alert">
+        期限切れです!
+      </div>
+      {% endif %}
+      <h2 class="card-title">タイトル：{{ post.title }}</h2>
+
+
+      <p>期限：{{ post.due.date() }}</p>
+      <a class="btn btn-primary" href="detail/{{ post.id }}" role="button">Detail</a>
+      <a class="btn btn-danger" href="delete/{{ post.id }}" role="button">Delete</a>
+      <a class="btn btn-success" href="update/{{ post.id }}" role="button">Update</a>
+    </div>
+  </div>
+  
+
+
+{% endfor %}
+
+{% endblock %}
