@@ -13,8 +13,6 @@ https://flask-todo-app-pito.herokuapp.com/
 
 ## 使い方
 
-DEMOの実行方法など、"Webアプリ"の基本的な使い方を説明
-
 1. git clone https://github.com/pi-to/Todo_app.git
 2. pip install -r requirements.txt
 3. python app.py
