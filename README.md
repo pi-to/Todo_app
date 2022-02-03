@@ -3,7 +3,7 @@
 ログイン機能を実装した簡易Todoアプリ
 
 
-## デモ
+## URL
 
 https://flask-todo-app-pito.herokuapp.com/
 
