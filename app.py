@@ -33,7 +33,7 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 
-@app.route('/', methods=["GET", "POST"])
+@app.route('/index', methods=["GET", "POST"])
 @login_required
 def index():
     if request.method == "GET":
@@ -49,10 +49,10 @@ def index():
 
         db.session.add(new_post)
         db.session.commit()
-        return redirect("/")
+        return redirect("/index")
 
 
-@app.route('/signup', methods=["GET", "POST"])
+@app.route('/', methods=["GET", "POST"])
 def signup():
     if request.method == "GET":
         return render_template('signup.html')
@@ -79,7 +79,7 @@ def login():
         user = User.query.filter_by(username=username).first()
         if check_password_hash(user.password, password):
             login_user(user)
-            return redirect("/")
+            return redirect("/index")
 
 
 @app.route('/logout')
@@ -116,7 +116,7 @@ def update(id):
         post.due = datetime.strptime(request.form.get("due"), "%Y-%m-%d")
 
         db.session.commit()
-        return redirect("/")
+        return redirect("/index")
 
 
 @app.route('/delete/<int:id>')
@@ -125,7 +125,7 @@ def delete(id):
     post = Post.query.get(id)
     db.session.delete(post)
     db.session.commit()
-    return redirect("/")
+    return redirect("/index")
 
 
 if __name__ == "__main__":
