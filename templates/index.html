@@ -1,0 +1,30 @@
+<!-- base.htmlを継承 -->
+{% extends "base.html" %}
+
+{% block body%}
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Todoアプリ</a>
+    </div>
+  </nav>
+<a href="/create" class="btn btn-primary" role="button">新しいTodo</a>
+<a href="/logout" class="btn btn-primary" role="button">ログアウト</a>
+
+
+{% for post in posts %}
+    <div class="card">
+        <div class="card-body">
+            <h2>タイトル: {{ post.title }}</h2>
+            {% if post.due.date() < today %}
+                期限切れ
+            {% endif %}
+            <p>期限: {{ post.due.date() }}</p>
+            <a href="/detail/{{ post.id }}" class="btn btn-info" role="button">詳細</a>
+            <a href="/update/{{ post.id }}" class="btn btn-secondary" role="button">編集</a>
+            <a href="/delete/{{ post.id }}" class="btn btn-success" role="button">削除</a>
+        </div>
+    </div>
+
+{% endfor %}
+
+{% endblock %}

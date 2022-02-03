@@ -1,0 +1,9 @@
+<!-- base.htmlを継承 -->
+{% extends "base.html" %}
+
+{% block body%}
+<h2>タイトル名: {{ post.title }}</h2>
+<p>詳細: {{ post.detail }}</p>
+<p>期限: {{ post.due.date() }}</p>
+<a href="/" role="button">戻る
+{% endblock %}
