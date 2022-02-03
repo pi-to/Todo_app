@@ -1,8 +1,4 @@
 # Todo_app
-flask + SQLalchemy
-
-
-# Todo_app
 
 ログイン機能を実装した簡易Todoアプリ
 
