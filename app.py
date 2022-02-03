@@ -1,5 +1,5 @@
 from datetime import datetime, date
-from flask import Flask, redirect, render_template, request, url_for #追加
+from flask import Flask, redirect, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, LoginManager, login_user, logout_user, login_required
 from werkzeug.security import generate_password_hash, check_password_hash
