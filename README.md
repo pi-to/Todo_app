@@ -11,8 +11,8 @@ https://flask-todo-app-pito.herokuapp.com/
 
 ## 使い方
 
-1. git clone https://github.com/pi-to/Todo_app.git
-2. pip install -r requirements.txt
+1. git clone https://github.com/pi-to/Todo_app.git　　
+2. pip install -r requirements.txt　　
 3. python app.py
 
 ## 環境
