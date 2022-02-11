@@ -5,14 +5,14 @@
 
 ## URL
 
-https://flask-todo-app-pito.herokuapp.com/
-インフラ：Herokku
+https://flask-todo-app-pito.herokuapp.com/<br>
+インフラ：Herokku<br>
 (サーバーを停止する場合があります.)
 
 ## 使い方
 
-1. git clone https://github.com/pi-to/Todo_app.git<br>
-2. pip install -r requirements.txt<br>
+1. git clone https://github.com/pi-to/Todo_app.git
+2. pip install -r requirements.txt
 3. python app.py
 
 ## 環境
