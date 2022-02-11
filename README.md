@@ -19,7 +19,9 @@ https://flask-todo-app-pito.herokuapp.com/<br>
 * macOS Monterey バージョン12.1
 * Visual Stdion Code
 * python 3.10.2
-* インフラ Herokku<br>
+* サーバー Heroku
+* Webアプリケーションフレームワーク Flask
+* CSSフレームワーク bootstrap
 * データベース SQLite
 
 
