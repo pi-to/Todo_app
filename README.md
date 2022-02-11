@@ -20,7 +20,7 @@ https://flask-todo-app-pito.herokuapp.com/<br>
 * Visual Stdion Code
 * python 3.10.2
 * サーバー Heroku
-* Webアプリケーションフレームワーク Flask
+* Webアプリケーションフレームワーク Flask==2.0.2
 * CSSフレームワーク bootstrap
 * データベース SQLite
 
