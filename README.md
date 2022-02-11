@@ -6,7 +6,8 @@
 ## URL
 
 https://flask-todo-app-pito.herokuapp.com/
-サーバーを停止する場合があります.
+インフラ：Herokku
+(サーバーを停止する場合があります.)
 
 ## 使い方
 
