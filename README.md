@@ -6,7 +6,6 @@
 ## URL
 
 https://flask-todo-app-pito.herokuapp.com/<br>
-インフラ：Herokku<br>
 (サーバーを停止する場合があります.)
 
 ## 使い方
@@ -20,6 +19,8 @@ https://flask-todo-app-pito.herokuapp.com/<br>
 * macOS Monterey バージョン12.1
 * Visual Stdion Code
 * python 3.10.2
+* インフラ Herokku<br>
+* データベース SQLite
 
 
 ## 文責
